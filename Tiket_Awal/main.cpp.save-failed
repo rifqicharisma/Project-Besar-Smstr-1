@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int input, tujuan, jumlah, tgl, bln, thn;
+    string kelas;
+    cout << endl;
+    cout << "===MENU PEMESANAN TIKET KERETA DAOP 5 PURWOKERTO===" << endl;
+    cout << endl;
+    cout << "1. Pemesanan Tiket" << endl;
+    cout << "2. Cek Tiket" << endl;
+    cout << endl;
+    cout << "Masukkan Input : ";cin>>input;
+    cout << endl;
+    if(input==1){
+        cout << "======= TUJUAN =======" << endl;
+        string matriks[2][2] = {{"1. Semarang", "2. Yogyakarta"},{"3. Solo\t   ", "4. Madiun"}};
+        int baris, kolom;
+        for(baris = 0; baris < 2; baris++){
+            for(kolom = 0; kolom < 2; kolom ++){
+                cout << matriks[baris][kolom] << " ";
+        }
+        cout << endl;
+    }
+        cout << "Masukkan Tujuan : ";cin>>tujuan;
+        if(tujuan==1){
+            cout << "Masukkan Tanggal Keberangkatan" << endl;
+            cout << "\t- Tanggal : ";cin>>tgl;
+            cout << "\t- Bulan   : ";cin>>bln;
+            cout << "\t- Tahun   : ";cin>>thn;
+            cout << "Masukkan Jumlah Penumpang\t : ";cin>>jumlah;
+            cout << "Masukkan Kelas Kereta\t: ";cin>>kelas;
+            cout << "================================================================" << endl;
+            cout << "Tujuan\t: "<<tujuan<<endl;
+            cout << "Tanggal\t: "<<tgl<<"-"<<bln<<"-"<<thn<<endl;
+            cout << "Jumlah Penumpang\t: "<<jumlah<<endl;
+            cout << "Kelas\t: "<<kelas<<endl;
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1575434733 source:a:\disk 1\ripki alfinnur\codeblocksproject\project besar\tiket_awal\main.cpp
+	<iostream>
+	<conio.h>
+	<windows.h>
+
